@@ -19,8 +19,8 @@ const CARDS_DATA = [
     id: 'card-3',
     title: 'Thales Sampaio',
     images: [
-    'Thales Sampaio/Thales1.jpg',
-    'Thales Sampaio/Thales2.jpg'
+    'Thales Sampaio/thales1.jpg',
+    'Thales Sampaio/thales2.jpg'
     ]
   },
   {
