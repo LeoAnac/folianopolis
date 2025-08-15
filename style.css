@@ -1,0 +1,198 @@
+:root {
+  --bg-url: url('fundo.jpg');          /* já use a sua imagem se quiser */
+  --overlay: rgba(0,0,0,0.45);
+  --card-bg: rgba(255,255,255,0.92);
+  --accent: #ff2d55;
+  --text: #1f2937;
+  --radius: 18px;
+
+  /* NOVAS: tamanho/ajuste do card e das imagens */
+  --card-min: 340px;            /* cards maiores (era 260px) */
+  --carousel-max-h: 420px;
+  --fit: contain;               /* sem corte: mostra a foto inteira (letterbox) */
+}
+
+html, body { height: 100%; }
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.bg {
+  position: fixed;
+  inset: 0;
+  background-image: var(--bg-url);
+  background-size: cover;
+  background-position: center;
+  z-index: -2;
+}
+.bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--overlay);
+  z-index: -1;
+}
+
+header {
+  max-width: 1200px;
+  margin: 24px auto 8px auto;
+  padding: 0 16px;
+}
+h1 {
+  color: #fff; /* branco */
+  margin: 0 0 6px 0;
+  font-size: clamp(22px, 3vw, 32px);
+  font-weight: 800;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.6); /* deixa legível mesmo com fundo claro */
+}
+.subtitle {
+  color: #fff;
+  opacity: 0.9;
+}
+
+.toolbar {
+  max-width: 1200px;
+  margin: 8px auto 0 auto;
+  padding: 0 16px 8px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.button {
+  border: 0;
+  cursor: pointer;
+  color: #111;
+  background: #fff;
+  padding: 10px 14px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto 32px auto;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--card-min), 1fr));
+  gap: 20px;
+  flex: 1; /* empurra o footer para baixo */
+}
+.card {
+  background: var(--card-bg);
+  color: var(--text);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 12px 32px rgba(0,0,0,.28);
+  display: flex;
+  flex-direction: column;
+}
+
+.carousel{
+  position: relative;
+  overflow: hidden;
+  background: #111; /* fundo para as faixas quando a imagem não preenche */
+  /* sem aspect-ratio fixo */
+}
+
+.track{
+  display: flex;
+  width: 100%;
+  /* altura vai seguir a maior imagem (controlada por max-height no img) */
+  transition: transform .35s ease;
+  align-items: center; /* centraliza verticalmente */
+}
+
+.slide{
+  flex: 0 0 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0; /* sem padding extra */
+}
+
+/* MOSTRAR A IMAGEM INTEIRA, SEM CORTES */
+.slide img{
+  display: block;
+  max-width: 100%;
+  max-height: var(--carousel-max-h);
+  width: auto;     /* mantém proporção natural */
+  height: auto;    /* mantém proporção natural */
+  object-fit: contain !important; /* força “sem corte” */
+}
+/* Botões de navegação */
+.nav {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transform: translateY(-50%);
+  pointer-events: none; /* evita bloquear clique na imagem */
+}
+
+.nav button {
+  pointer-events: auto; /* reativa clique no botão */
+  background: rgba(0, 0, 0, 0.4);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.nav button:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.nav button svg {
+  width: 24px;
+  height: 24px;
+  fill: #fff;
+}
+
+.dots {
+  position: absolute; left: 50%; bottom: 8px; transform: translateX(-50%);
+  display: flex; gap: 6px; background: rgba(0,0,0,.35); padding: 4px 8px; border-radius: 999px;
+}
+.dot { width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,.7); }
+.dot.active { background: #fff; }
+
+.meta {
+  display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 10px 12px;
+}
+.title { font-weight: 700; font-size: 14px; }
+
+.like {
+  display: inline-flex; align-items: center; gap: 6px; cursor: pointer;
+  color: #6b7280; font-weight: 700;
+}
+.like.active { color: var(--accent); }
+
+/* footer fixo */
+.site-footer{
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  height: var(--footer-h);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 16px;
+  color: #fff;
+  font-weight: 700;
+  background: rgba(0,0,0,.35);
+  backdrop-filter: blur(2px);
+  z-index: 5;
+}
+
+/* dá espaço no fim da página para o footer não cobrir os cards */
+body { padding-bottom: calc(var(--footer-h) + env(safe-area-inset-bottom, 0px)); }

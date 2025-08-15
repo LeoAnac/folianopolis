@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Folianópolis</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="trio.png">
+
+</head>
+<body>
+  <div class="bg" aria-hidden="true"></div>
+
+  <header>
+    <h1>Ficha de Apresentação</h1>
+    <!-- <div class="subtitle">Exemplo simples em HTML/CSS/JS — carrossel por card e botão de curtir ❤️</div> -->
+  </header>
+
+  <!-- <div class="toolbar">
+    <button class="button" id="shuffleBtn">Embaralhar cards</button>
+    <button class="button" id="bgBtn">Trocar fundo (exemplo)</button>
+  </div> -->
+
+  <main class="container" id="cards"></main>
+
+<footer class="site-footer">O melhor grupo do Folianópolis</footer>
+
+  <template id="card-template">
+    <article class="card" data-card-id="">
+      <div class="carousel" tabindex="0">
+        <div class="track"></div>
+        <div class="nav" aria-hidden="true">
+          <button class="prev" aria-label="Anterior"> 
+            <svg viewBox="0 0 24 24" fill="white"><path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+          </button>
+          <button class="next" aria-label="Próximo">
+            <svg viewBox="0 0 24 24" fill="white"><path d="m8.59 16.59 1.41 1.41L16 12 10 6 8.59 7.41 13.17 12z"/></svg>
+          </button>
+        </div>
+        <div class="dots"></div>
+      </div>
+      <div class="meta">
+        <div class="title"></div>
+        <button class="like" aria-pressed="false">
+          <span class="heart" aria-hidden="true">❤️</span>
+          <span class="count">0</span>
+        </button>
+      </div>
+    </article>
+  </template>
+
+  <script src="script.js"></script>
+</body>
+</html>
