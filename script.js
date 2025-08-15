@@ -64,6 +64,24 @@ const CARDS_DATA = [
       'Flavia Maria/flavia2.jpg'
     ]
   }
+  ,
+  {
+    id: 'card-9',
+    title: 'Amanda Stoeberl',
+    images: [
+      'Amanda Stoeberl/amanda1.jpg',
+      'Amanda Stoeberl/amanda2.jpg'
+    ]
+  }
+    ,
+  {
+    id: 'card-10',
+    title: 'Vitor Eduardo',
+    images: [
+      'Vitor Eduardo/vitor1.jpg',
+      'Vitor Eduardo/vitor2.jpg'
+    ]
+  }
 
 ];
 
