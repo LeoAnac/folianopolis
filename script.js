@@ -30,7 +30,41 @@ const CARDS_DATA = [
       'Bruno Nucci/bruno1.jpg',
       'Bruno Nucci/bruno2.jpg'
     ]
+  },
+  {
+    id: 'card-5',
+    title: 'Rogerio Moraes',
+    images: [
+      'Rogerio Moraes/rogerio1.jpg',
+      'Rogerio Moraes/rogerio2.jpg'
+    ]
+  },
+  {
+    id: 'card-6',
+    title: 'Karla Rodrigues',
+    images: [
+      'Karla Rodrigues/karla1.jpg',
+      'Karla Rodrigues/karla2.jpg'
+    ]
+  },
+  {
+    id: 'card-7',
+    title: 'Felipe Gomes',
+    images: [
+      'Felipe Gomes/felipe1.jpg',
+      'Felipe Gomes/felipe2.jpg'
+    ]
   }
+  ,
+  {
+    id: 'card-8',
+    title: 'Flavia Maria',
+    images: [
+      'Flavia Maria/flavia1.jpg',
+      'Flavia Maria/flavia2.jpg'
+    ]
+  }
+
 ];
 
 /***********************
