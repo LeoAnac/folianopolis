@@ -106,7 +106,7 @@ const CARDS_DATA = [
     id: 'card-14',
     title: 'Amanda Andrade',
     images: [
-      'Amanda Andrade/andrade2.jpg',
+      'Amanda Andrade/andrade1.jpeg',
       'Amanda Andrade/andrade2.jpg'
     ]
   }
@@ -145,6 +145,37 @@ const CARDS_DATA = [
       'Julia Bernardon/julia1.jpeg',
       'Julia Bernardon/julia2.jpg'
     ]
+    
+  }
+     ,
+  {
+    id: 'card-19',
+    title: 'Sidvan Santos',
+    images: [
+      'Sidvan Santos/sidvan1.jpeg',
+      'Sidvan Santos/sidvan2.jpg'
+    ]
+    
+  }
+       ,
+  {
+    id: 'card-20',
+    title: 'Saulo Tortola',
+    images: [
+      'Saulo Tortola/saulo1.jpg',
+      'Saulo Tortola/saulo2.jpg'
+    ]
+    
+  }
+         ,
+  {
+    id: 'card-21',
+    title: 'Julio Bonfim',
+    images: [
+      'Julio Bonfim/julio1.jpeg',
+      'Julio Bonfim/julio2.jpg'
+    ]
+    
   }
 
 
