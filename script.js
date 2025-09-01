@@ -135,15 +135,15 @@ const CARDS_DATA = [
       'Laila Damasceno/laila2.jpgg'
     ]
   }
-     ,
-  {
-    id: 'card-17',
-    title: 'Laila Damasceno',
-    images: [
-      'Laila Damasceno/laila1.jpeg',
-      'Laila Damasceno/laila1.jpeg'
-    ]
-  }
+    //  ,
+  // {
+  //   id: 'card-17',
+  //   title: 'Laila Damasceno',
+  //   images: [
+  //     'Laila Damasceno/laila1.jpeg',
+  //     'Laila Damasceno/laila1.jpeg'
+  //   ]
+  // }
 
 
 
