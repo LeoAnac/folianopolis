@@ -89,7 +89,7 @@ const CARDS_DATA = [
     images: [
       'Larissa Estancovich/estancovich.jpg',
       'Larissa Estancovich/estancovich2.jpg'
-    ]g
+    ]
   }
 
 ];
