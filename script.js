@@ -91,6 +91,61 @@ const CARDS_DATA = [
       'Larissa Estancovich/estancovich2.jpg'
     ]
   }
+  ,
+  {
+    id: 'card-13',
+    title: 'Pamela Santos',
+    images: [
+      'Pamela Santos/pamela1.jpeg',
+      'Pamela Santos/pamela2.jpg'
+    ]
+  }  ,
+  {
+    id: 'card-13',
+    title: 'Pamela Santos',
+    images: [
+      'Pamela Santos/pamela1.jpeg',
+      'Pamela Santos/pamela2.jpg'
+    ]
+  }
+   ,
+  {
+    id: 'card-14',
+    title: 'Talita Guimaraes',
+    images: [
+      'Talita Guimaraes/talita1.jpeg',
+      'Talita Guimaraes/talita2.jpg'
+    ]
+  } 
+  ,
+  {
+    id: 'card-15',
+    title: 'Daniela Aparecida',
+    images: [
+      'Daniela Aparecida/aparecida1.jpeg',
+      'Daniela Aparecida/aparecida2.jpg'
+    ]
+  }
+    ,
+  {
+    id: 'card-16',
+    title: 'Laila Damasceno',
+    images: [
+      'Laila Damasceno/laila1.jpeg',
+      'Laila Damasceno/laila2.jpgg'
+    ]
+  }
+     ,
+  {
+    id: 'card-17',
+    title: 'Laila Damasceno',
+    images: [
+      'Laila Damasceno/laila1.jpeg',
+      'Laila Damasceno/laila1.jpeg'
+    ]
+  }
+
+
 
 ];
 
