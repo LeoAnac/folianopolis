@@ -99,51 +99,53 @@ const CARDS_DATA = [
       'Pamela Santos/pamela1.jpeg',
       'Pamela Santos/pamela2.jpg'
     ]
-  }  ,
+ 
+  } 
+   ,
   {
-    id: 'card-13',
-    title: 'Pamela Santos',
+    id: 'card-14',
+    title: 'Amanda Andrade',
     images: [
-      'Pamela Santos/pamela1.jpeg',
-      'Pamela Santos/pamela2.jpg'
+      'Amanda Andrade/andrade2.jpg',
+      'Amanda Andrade/andrade2.jpg'
     ]
   }
    ,
   {
-    id: 'card-14',
+    id: 'card-15',
     title: 'Talita Guimaraes',
     images: [
-      'Talita Guimaraes/talita1.jpeg',
+      'Talita Guimaraes/talita1.jpg',
       'Talita Guimaraes/talita2.jpg'
     ]
   } 
   ,
   {
-    id: 'card-15',
+    id: 'card-16',
     title: 'Daniela Aparecida',
     images: [
       'Daniela Aparecida/aparecida1.jpeg',
-      'Daniela Aparecida/aparecida2.jpg'
+      'Daniela Aparecida/aparecida2.jpeg'
     ]
   }
     ,
   {
-    id: 'card-16',
+    id: 'card-17',
     title: 'Laila Damasceno',
     images: [
       'Laila Damasceno/laila1.jpeg',
-      'Laila Damasceno/laila2.jpgg'
+      'Laila Damasceno/laila2.jpg'
     ]
   }
-    //  ,
-  // {
-  //   id: 'card-17',
-  //   title: 'Laila Damasceno',
-  //   images: [
-  //     'Laila Damasceno/laila1.jpeg',
-  //     'Laila Damasceno/laila1.jpeg'
-  //   ]
-  // }
+     ,
+  {
+    id: 'card-18',
+    title: 'Julia Bernardon',
+    images: [
+      'Julia Bernardon/julia1.jpeg',
+      'Julia Bernardon/julia2.jpg'
+    ]
+  }
 
 
 
