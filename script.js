@@ -87,7 +87,7 @@ const CARDS_DATA = [
     id: 'card-11',
     title: 'Larissa Estancovich',
     images: [
-      'Larissa Estancovich/estancovich.jpg',
+      'Larissa Estancovich/estancovich1.jpg',
       'Larissa Estancovich/estancovich2.jpg'
     ]
   }
