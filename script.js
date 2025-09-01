@@ -82,6 +82,15 @@ const CARDS_DATA = [
       'Vitor Eduardo/vitor2.jpg'
     ]
   }
+,
+  {
+    id: 'card-11',
+    title: 'Larissa Estancovich',
+    images: [
+      'Larissa Estancovich/estancovich.jpg',
+      'Larissa Estancovich/estancovich2.jpg'
+    ]g
+  }
 
 ];
 
