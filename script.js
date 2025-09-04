@@ -197,7 +197,16 @@ const CARDS_DATA = [
     ]
     
   }
-
+         ,
+  {
+    id: 'card-24',
+    title: 'Luiza Eduarda',
+    images: [
+      'Luiza Eduarda/luiza1.jpeg',
+      'Luiza Eduarda/luiza2.jpg'
+    ]
+    
+  }
 
 ];
 
