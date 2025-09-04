@@ -177,7 +177,26 @@ const CARDS_DATA = [
     ]
     
   }
-
+         ,
+  {
+    id: 'card-22',
+    title: 'Laura Dalla Bona',
+    images: [
+      'Laura Dalla Bona/laura1.jpeg',
+      'Laura Dalla Bona/laura2.jpg'
+    ]
+    
+  }
+         ,
+  {
+    id: 'card-23',
+    title: 'Hygia Chevitarese',
+    images: [
+      'Hygia Chevitarese/hygia1.jpeg',
+      'Hygia Chevitarese/hygia2.jpg'
+    ]
+    
+  }
 
 
 ];
