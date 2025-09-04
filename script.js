@@ -207,7 +207,36 @@ const CARDS_DATA = [
     ]
     
   }
-
+         ,
+  {
+    id: 'card-25',
+    title: 'Ludan Burey',
+    images: [
+      'Ludan Burey/ludan1.jpeg',
+      'Ludan Burey/ludan2.jpg'
+    ]
+    
+  }
+           ,
+  {
+    id: 'card-26',
+    title: 'Lucas Machado',
+    images: [
+      'Lucas Machado/machado1.jpg',
+      'Lucas Machado/machado2.jpg'
+    ]
+    
+  }
+             ,
+  {
+    id: 'card-27',
+    title: 'Darlison Lebark',
+    images: [
+      'Darlison Lebark/darlison1.jpeg',
+      'Darlison Lebark/darlison2.jpg'
+    ]
+    
+  }
 ];
 
 /***********************
