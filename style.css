@@ -196,3 +196,34 @@ h1 {
 
 /* dá espaço no fim da página para o footer não cobrir os cards */
 body { padding-bottom: calc(var(--footer-h) + env(safe-area-inset-bottom, 0px)); }
+
+/* ==== CONTADOR FOLIANÓPOLIS ==== */
+#folia-countdown {
+  text-align: center;
+  color: #fff;
+  margin: 30px auto;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 16px;
+  max-width: 420px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  backdrop-filter: blur(4px);
+}
+
+#folia-countdown h2 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.7);
+}
+
+#countdown-timer {
+  font-size: 1.9rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+#folia-countdown p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  opacity: 0.9;
+}

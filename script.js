@@ -359,14 +359,20 @@ renderCards(CARDS_DATA);
 /***********************
  * Toolbar
  ***********************/
-document.getElementById('shuffleBtn').addEventListener('click', () => {
-  const arr = [...CARDS_DATA];
-  for (let i = arr.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [arr[i], arr[j]] = [arr[j], arr[i]];
-  }
-  renderCards(arr);
-});
+/***********************
+ * Toolbar (versão segura)
+ ***********************/
+const shuffleBtn = document.getElementById('shuffleBtn');
+if (shuffleBtn) {
+  shuffleBtn.addEventListener('click', () => {
+    const arr = [...CARDS_DATA];
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    renderCards(arr);
+  });
+}
 
 const demoBgs = [
   'https://images.unsplash.com/photo-1520975916090-3105956dac38?q=80&w=1920&auto=format&fit=crop',
@@ -374,7 +380,44 @@ const demoBgs = [
   'https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?q=80&w=1920&auto=format&fit=crop'
 ];
 let bgIndex = 0;
-document.getElementById('bgBtn').addEventListener('click', () => {
-  bgIndex = (bgIndex + 1) % demoBgs.length;
-  document.documentElement.style.setProperty('--bg-url', `url('${demoBgs[bgIndex]}')`);
-});
+
+const bgBtn = document.getElementById('bgBtn');
+if (bgBtn) {
+  bgBtn.addEventListener('click', () => {
+    bgIndex = (bgIndex + 1) % demoBgs.length;
+    document.documentElement.style.setProperty('--bg-url', `url('${demoBgs[bgIndex]}')`);
+  });
+}
+
+
+/***********************
+ * CONTADOR FOLIANÓPOLIS
+ ***********************/
+function iniciarContagemFolia() {
+  const dataFolia = new Date("November 20, 2025 00:00:00").getTime();
+  const timer = document.getElementById("countdown-timer");
+  if (!timer) return; // evita erro se o elemento não existir
+
+  function atualizar() {
+    const agora = new Date().getTime();
+    const restante = dataFolia - agora;
+
+    if (restante <= 0) {
+      timer.textContent = "🎉 O Folia começou! 🎉";
+      clearInterval(intervalo);
+      return;
+    }
+
+    const dias = Math.floor(restante / (1000 * 60 * 60 * 24));
+    const horas = Math.floor((restante % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutos = Math.floor((restante % (1000 * 60 * 60)) / (1000 * 60));
+    const segundos = Math.floor((restante % (1000 * 60)) / 1000);
+
+    timer.textContent = `${dias}d ${horas}h ${minutos}m ${segundos}s`;
+  }
+
+  atualizar(); // executa na hora
+  const intervalo = setInterval(atualizar, 1000);
+}
+
+document.addEventListener("DOMContentLoaded", iniciarContagemFolia);
