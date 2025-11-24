@@ -75,15 +75,6 @@ const CARDS_DATA = [
   }
     ,
   {
-    id: 'card-10',
-    title: 'Vitor Eduardo',
-    images: [
-      'Vitor Eduardo/vitor1.jpg',
-      'Vitor Eduardo/vitor2.jpg'
-    ]
-  }
-,
-  {
     id: 'card-11',
     title: 'Larissa Estancovich',
     images: [
@@ -91,16 +82,7 @@ const CARDS_DATA = [
       'Larissa Estancovich/estancovich2.jpg'
     ]
   }
-  ,
-  {
-    id: 'card-13',
-    title: 'Pamela Santos',
-    images: [
-      'Pamela Santos/pamela1.jpeg',
-      'Pamela Santos/pamela2.jpg'
-    ]
- 
-  } 
+  
    ,
   {
     id: 'card-14',
