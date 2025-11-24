@@ -219,16 +219,7 @@ const CARDS_DATA = [
     ]
     
   }
-               ,
-  {
-    id: 'card-28',
-    title: 'Letícia Diel',
-    images: [
-      'Leticia Diel/diel1.jpeg',
-      'Leticia Diel/diel2.jpg'
-    ]
-    
-  }
+
 ];
 
 /***********************
